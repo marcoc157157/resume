@@ -1,30 +1,55 @@
 <head>
-     <style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+            
+        }
+        .container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            animation: animate 20s ease-in-out infinite;
+            background-size: cover;
+        }
 
-          section {
-             
-			  margin: 0;
-			  padding: 0;
-         
-			width: 100%;
-			
-			background: url(bg.jpg);
-			
-		}
-		
+       
         
 
+        @keyframes animate {
+            0%,100%
 
+        {
+            background-image: url(1.jpeg) ;
+        }
 
-      </style>
+            25% {
+                background-image: url(2.jpeg);
+            }
+
+            50% {
+                background-image: url(3.jpeg);
+            }
+
+            75% {
+                background-image: url(4.jpeg);
+            }
+
+        
+    </style>
 </head>
 <body>
-    <section>
-		
+    <div class="container">
+       
 
-    <iframe src="iframe2.html" width="100%" frameBorder="0" scrolling="no" name="top"> </iframe>
-    <iframe class="iframe1" src="iframe.html" frameBorder="0" scrolling="no"  name="under"> </iframe> 
-	</section>
+
+                <iframe src="iframe2.html" width="100%" height="10%" frameBorder="0" scrolling="no" name="top"> </iframe>
+                <iframe class="iframe1" width="100%" height="100%" margin="50px" align="middle" src="intro.html" frameBorder="0" scrolling="no" name="under"> </iframe>
+           
+    </div>
 </body>
 </html>
 
