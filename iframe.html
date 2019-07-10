@@ -1,175 +1,76 @@
 
+<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
 <style>
-	  
-             
-         
-	  section {
-             width: 98%;
-             height: 100%;
-             margin: 10px auto;
-			 padding: 10px;
-             background-color: #6495ED;
-             display: block;
-             overflow: hidden;
-			  margin: 0;
-			  padding: 0;
-         
-			position: relative;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-		section .wave{
-			position: absolute;
-			width: 100%;
-			height: 143px;
-			bottom: 0;
-			left: 0;
-			background: url("wave.png");
-			opacity:0.6;
-			animation: animate 10s linear infinite;
-		}
-		section .wave:before
-		{
-			content: "";
-			width: 100%;
-			height: 143px;
-			background: url("wave.png");
-			position: absolute;
-			top: 0;
-			left: 0;
-			opacity: 0.4;
-			animation: animate-reverse 10s linear infinite;
-		}
-		section .wave:after 
-		{
-			content: "";
-			width: 100%;
-			height: 143px;
-			background: url("wave.png");
-			position: absolute;
-			top: 0;
-			left: 0;
-			opacity: 0.6;
-			animation-delay: -5s;
-			animation: animate 20s linear infinite;
-		}
-
-
-		@keyframes animate{ 
-			0%
-			{background-position: 0;}
-			100%
-			{background-position: 1360px;}
-		}
-		
-		@keyframes animate-reverse{ 
-			0%
-			{background-position: 1360px;}
-			100%
-			{background-position: 0;}}
-
-    #firstDiv {
+    body {
+        width: 100%;
+        height: 100%;
+        color: white;
         position: relative;
-        top: 0px;
-        padding: 20px 100px 20px 100px
-      
+        background-size: cover;
+        background-attachment: fixed;
+        text-stroke: 1px black;
     }
 
-    #secondDiv {
-        position: relative;
-        top: 100px;
-        padding: 20px 100px 50000px 100px
-    }
-
-    #thirdDiv {
-        position: relative;
-        top: -10px;
-        padding: 20px 100px 20px 100px
-    }
     div {
-        font-size:35px;
+        font-size: 35px;
+        padding-left: 20px;
     }
-    h2 {
+
+    h1 {
         text-align: center;
-		color: white;
+        color: white;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        letter-spacing: 15px;
+        font-family: 'Russo One', sans-serif;
+        animation: text 1s;
     }
-    #me {
-        float: right;
-        border: 1px solid #ddd;
-        border-radius: 70px;
-        padding: 5px;
-       
-    }
+    @keyframes text {
+        0% {
+        }
 
+        30% {
+            letter-spacing: 25px;
+        }
+
+        85% {
+            letter-spacing: 8px;
+        }
+    }
+    .stroke {
+        color: black;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 0.9px;
+        font-family: 'Oswald', sans-serif;
+    }
 </style>
-<section>
-		<div class="wave"></div>
 
+<body>
+    <div>
+        <a id="exp">
+            <h1> EXPERIENCE</h1>
+            <div class="stroke">
+                OTHER WORKING EXPERIENCE: <br>
+                Teacher assistant (Sage World Tuition Centre) <br>
+                Teach in small groups of students around 6-12,
+                communicate and report to parents on study progress,
+                assist administrative work
+                <br><br>
+                In school activities:<br>
+                Vice House chairperson| AUG 2016-July 2017<br>
+                •      Organized different school activities
+                <br><br>
+                Sports Club<br>
+                Treasurer             | AUG 2016-JULY 2017<br>
+                •     Drafted budgets and recorded all expenses<br>
+                •     Designed financial plans for every activity<br>
+                <br>
+                ADDTIONAL SKILLS:
+                Basic Microsoft Word, Excel, PowerPoint skills
+                <br>
+                LANGUAGE:  Cantonese (Native), Mandarin (Fluent), English (Fluent)
+            </div>
+        </a>
+    </div>
+</body>
 
-
-
-<div id="firstDiv">
-    <a id="exp">
-        <h2> EXPERIENCE</h2>
-        OTHER WORKING EXPERIENCE: <br>
-
-        Teacher assistant (Sage World Tuition Centre) <br>
-        Teach in small groups of students around 6-12,
-        communicate and report to parents on study progress,
-        assist administrative work
-        <br><br>
-        In school activities:<br>
-        Vice House chairperson| AUG 2016-July 2017<br>
-        •      Organized different school activities
-        <br><br>
-        Sports Club<br>
-        Treasurer             | AUG 2016-JULY 2017<br>
-        •     Drafted budgets and recorded all expenses<br>
-        •     Designed financial plans for every activity<br>
-        <br>
-        ADDTIONAL SKILLS:
-        Basic Microsoft Word, Excel, PowerPoint skills
-        <br>
-        LANGUAGE:  Cantonese (Native), Mandarin (Fluent), English (Fluent)
-    </a>
-</div>
-</section>
-<section>
-<div id="secondDiv">
-    <a id="edu">
-        <h2> EDUCATION</h2>
-        
-        2012-2018 Sha Tin Government Secondary School<br>
-        •	Economics and Chemistry
-        <br><br>
-        2018-2019 The Hong Kong Polytechnic University<br>
-        •     Major in Logistics and Enterprise Management Engineering<br><br>
-        Relevant coursework<br>
-        Introduction to Enterprise Computing, Fundamental of Enterprise Systems, Basic Mathematics - Calculus and Probability and Statistics
-    </a>
-</div>
-</section>
-<section>
-<div id="thirdDiv">
-    <a id="intro">
-        <h2> INTRODUCTION </h2>
-        <img id="me" src="picture(square).jpg" alt="ME">
-        
-             
-         Name: Chan Man Ho Marco<br><br>
-
-        Contact Number:              5116 8607<br><br>
-
-        Address:                     No.81, Shatin Tau Village, Shatin, NT, Hong Kong<br><br>
-
-        E-mail:                      marcoc157157@gmail.com<br><br><br>
-
-
-
-        A hardworking student who is alert to figures and love dealing with data and money.<br>
-        Serving as club and house committee at school in the past to assist in organizing events and activities.<br>
-        Seeking to apply my analytical skills to aid your company in meeting its milestones.<br>
-
-    </a>
-</div>
-</section>
